@@ -41,21 +41,57 @@ navbar li {
 main section
 */
 
-.main-content {
-  margin: 0 100px;
+#projects {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: auto;
+  width: 100%;
+  height: 2000px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
   grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+    "first first second second"
+    "first first third third"
+    "fourth fourth fifth fifth";
+  margin: 10px 0;
 }
 
-.first-project-container {
+#projects #first-project-container {
+  grid-area: first;
+}
 
-  grid-area: header;
-  border: 10px solid black
+#projects #second-project-container {
+  grid-area: second;
+}
+
+#projects #third-project-container {
+  grid-area: third;
+}
+
+#projects #fourth-project-container {
+  grid-area: fourth;
+}
+
+#projects #fifth-project-container {
+  grid-area: fifth;
+}
+
+#projects .project-container:hover {
+  color: red;
+}
+
+.project-container {
+  position: relative;
+  /* background-color: 	#B0C4DE */
+  border: 2px solid 	#B0C4DE;
+}
+
+.project-card-title {
+  position: absolute;
+  bottom: 0;
+  margin-left: -5px;
+  background-color: 	#B0C4DE;
+  border: 2px solid 	#B0C4DE;
+  width: 100px;
+  text-align: center;
 }
 
 /*
