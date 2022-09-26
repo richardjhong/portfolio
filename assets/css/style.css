@@ -96,6 +96,7 @@ Effectively makes project cards by default grayscale and resume color on hover
   border: 2px solid 	var(--container-highlight-blue);
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  cursor: pointer;
 }
 
 .project-container:hover {
@@ -134,6 +135,10 @@ Effectively makes project cards by default grayscale and resume color on hover
 .project-container:hover .project-card-description {
   visibility: visible;
 }
+
+/*
+About Me Section within main
+*/
 
 .about_me_row_container {
   display: flex;
@@ -233,6 +238,11 @@ textarea {
     "fourth"
     "fifth";
   grid-template-columns: 1fr;
+  }
+
+  .link-bar {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
