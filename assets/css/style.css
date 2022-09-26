@@ -188,11 +188,11 @@ contact_info section
 
 .contact-cards {
   display: flex;
+  align-items: center;
 }
 
 .contact_container_column {
-  margin: 100px 100px;
-  flex-direction: column;
+  margin: 30px 100px;
 }
 
 #contact-blurb-card {
@@ -201,6 +201,10 @@ contact_info section
 
 #contact-form-card {
   flex: 5 1 0;
+}
+
+#contact-blurb-card > * {
+  text-align: center;
 }
 
 .contact-input {
@@ -228,6 +232,7 @@ textarea {
 /* media query for larger screens */
 @media screen and (max-width: 1200px) {
   #contact_info, .contact-cards {
+    display: flex;
     flex-direction: column;
   }
 
@@ -241,9 +246,21 @@ textarea {
   grid-template-columns: 1fr;
   }
 
+  .project-card-description {
+    font-size: 15px;
+  }
+
+  #contact-blurb-card, #contact-form-card {
+    flex: 1 1 0;
+  }
+
   .link-bar {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .link-bar > li {
+    margin: 10px 0;
   }
 }
 
