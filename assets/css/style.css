@@ -2,11 +2,12 @@ body {
   background-color: #d9dcd6;
 }
 
-header, footer {
+header, footer, #about_me {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #2a607c;
   color: #ffffff;
+  margin: 10px 0;
 }
 
 header .header-title {
@@ -44,7 +45,7 @@ main section
 #projects {
   display: grid;
   width: 100%;
-  height: 2000px;
+  height: 2000px; 
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
   grid-template-areas: 
@@ -52,6 +53,11 @@ main section
     "first first third third"
     "fourth fourth fifth fifth";
   margin: 10px 0;
+}
+
+#projects > div {
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #projects #first-project-container {
@@ -74,14 +80,20 @@ main section
   grid-area: fifth;
 }
 
-#projects .project-container:hover {
-  color: red;
-}
-
+/* 
+Effectively makes project cards by default grayscale and resume color on hover
+*/
 .project-container {
   position: relative;
-  /* background-color: 	#B0C4DE */
+  background: url('../images/pexels-scott-webb-1544943.jpg');
   border: 2px solid 	#B0C4DE;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.project-container:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 .project-card-title {
@@ -94,13 +106,71 @@ main section
   text-align: center;
 }
 
+.project-container:hover .project-card-title {
+  color: white;
+  text-shadow: black 0px 0px 10px;
+}
+
+.project-card-description {
+  text-align: right;
+  margin-top: 100px;
+  margin-right: 100px;
+  visibility: hidden;
+  text-shadow: white 0px 0px 10px;
+  font-size: 30px;
+}
+
+.project-container:hover .project-card-description {
+  visibility: visible;
+}
+
+.vertical-line {
+  border-left: 4px solid #4b42f5;
+  height: 400px;
+}
+
+.about_me_row_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.about_me_row_container > * {
+  margin: 10px;
+}
+
+.about_me_row_container p {
+  width: 400px;
+  overflow-wrap: break-word;
+}
+
+.headshot_with_links {
+  display: flex;
+}
+
+.link-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.github-linkedin-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-icon-container > * {
+  margin: 10px;
+}
+
 /*
 contact_info section
 */
 
 #contact_info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -140,21 +210,20 @@ textarea {
 }
 
 /* media query for larger screens */
-@media screen and (max-width: 992px) {
-  header, footer {
-    width: 75%;
-  }
-
-  /* .contact_container_column {
-    flex: 0 0 33.333%;
-    max-width: 50%;
-  } */
-
+@media screen and (max-width: 1200px) {
   #contact_info, .contact-cards {
     flex-direction: column;
   }
 
-
+  #projects {
+    grid-template-areas: 
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth";
+  grid-template-columns: 1fr;
+  }
 }
 
  
