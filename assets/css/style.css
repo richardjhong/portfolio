@@ -1,41 +1,48 @@
+:root {
+  --body-background: #F7DDD4;
+  --white: white;
+  --container-highlight-blue: #B0C4DE;
+  --card-background-color: #448D76;
+  --text-orange: #FD4D0C;
+}
+
 body {
-  background-color: #d9dcd6;
+  background-color: var(--body-background);
 }
 
 header, footer, #about_me {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: var(--card-background-color);
+  color: var(--white);
   margin: 10px 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 header .header-title {
-  display: inline-block;
   font-size: 48px;
 }
 
-header h3 {
-  color: blue;
-}
-
-navbar {
-  padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
 .link-bar {
+  margin-right: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
   display: flex;
-  float: right;
+  align-items: center;
 }
 
-navbar li {
+.link-bar li {
   list-style-type: none;
-  display: inline-block;
   margin-left: 25px;
+  color: var(--text-orange)
+}
+
+.link-bar li a:visited{
+  color: var(--white);
 }
 
 /*
@@ -85,8 +92,8 @@ Effectively makes project cards by default grayscale and resume color on hover
 */
 .project-container {
   position: relative;
-  background: url('../images/pexels-scott-webb-1544943.jpg');
-  border: 2px solid 	#B0C4DE;
+  background: url('../images/pexels-monstera-7794425.jpg');
+  border: 2px solid 	var(--container-highlight-blue);
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
@@ -100,14 +107,18 @@ Effectively makes project cards by default grayscale and resume color on hover
   position: absolute;
   bottom: 0;
   margin-left: -5px;
-  background-color: 	#B0C4DE;
-  border: 2px solid 	#B0C4DE;
+  background-color: 	var(--container-highlight-blue);
+  border: 2px solid 	var(--container-highlight-blue);
   width: 100px;
   text-align: center;
 }
 
+.project-card-title h3 {
+  font-weight: bold;
+}
+
 .project-container:hover .project-card-title {
-  color: white;
+  color: var(--white);
   text-shadow: black 0px 0px 10px;
 }
 
@@ -116,17 +127,12 @@ Effectively makes project cards by default grayscale and resume color on hover
   margin-top: 100px;
   margin-right: 100px;
   visibility: hidden;
-  text-shadow: white 0px 0px 10px;
+  text-shadow: var(--white) 0px 0px 10px;
   font-size: 30px;
 }
 
 .project-container:hover .project-card-description {
   visibility: visible;
-}
-
-.vertical-line {
-  border-left: 4px solid #4b42f5;
-  height: 400px;
 }
 
 .about_me_row_container {
@@ -191,14 +197,18 @@ contact_info section
   flex: 5 1 0;
 }
 
-.contact-name, .contact-email, .contact-message {
+.contact-input {
   display: flex;
   flex-direction: column;
   margin: 30px 10px;
 }
 
-.input-label {
-  margin-bottom: 15px;
+.input-submit-button {
+  margin: 0 10px;
+}
+
+.input-submit-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 textarea {
