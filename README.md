@@ -11,15 +11,14 @@ In this project, I further cemented my knowledge of CSS and HTML. In particular,
 2. Main section
   1. The first portion within main is the Projects section. I used the CSS grid layout in particular to handle this section. For a crude visual breakdown of the grid, when the viewport has a screenwidth of at least 1201 pixels:
 
-        Viewport of screenwidth of at least 1201 pixels               
+Viewport of screenwidth of at least 1201 pixels               
         
-          <pre> 
-          First First   | Second Second    
-                        --------------
-          First First   | Third Third
-          ----------------------------
-          Fourth Fourth | Fifth Fifth 
-          </pre>
+          
+<pre>First First   | Second Second    
+                   --------------
+     First First   | Third Third
+     ----------------------------
+     Fourth Fourth | Fifth Fifth </pre>
 
         Viewport of screenwidth of less than 1201 pixels
 
