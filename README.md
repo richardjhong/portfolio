@@ -48,7 +48,11 @@ In this project, I further cemented my knowledge of CSS and HTML. In particular,
 3. Footer
 
 
+# Screenshots
+The following animation shows the web application's appearance and functionality:
 
+![portfolio demo](./assets/images/Screenshots/larger_viewport.png)
+![portfolio demo](./assets/images/Screenshots/smaller_viewport.png)
 
 
 
