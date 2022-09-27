@@ -4,27 +4,70 @@
   --container-highlight-blue: #B0C4DE;
   --card-background-color: #448D76;
   --text-orange: #FD4D0C;
+  --section-title-background-color: #D4EEF7;
 }
 
 body {
   background-color: var(--body-background);
 }
 
-header, footer, #about_me {
-  padding: 20px;
+header, #about_me, #contact_info {
   font-family: 'Noto', 'Trebuchet MS', Arial, sans-serif;
   background-color: var(--card-background-color);
   color: var(--white);
-  margin: 10px 0;
+  /* margin: 10px 0; */
+}
+
+header, footer {
+  padding: 20px;
+}
+
+main, #about_me, #contact_info {
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 25%;
+  background-color: var(--section-title-background-color);
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.section-title h3 {
+  color: black;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
+}
+
+.multi-language-name-header {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
 }
 
 header .header-title {
   font-size: 48px;
+  margin: 0 5px;
+}
+
+/* #korean-name {
+  display: flex;
+  justify-content: flex-end;
+} */
+
+.link-bar-icons {
+  display: flex;
+  align-items: center;
 }
 
 .link-bar {
@@ -32,7 +75,6 @@ header .header-title {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   display: flex;
-  align-items: center;
 }
 
 .link-bar li {
@@ -146,6 +188,7 @@ About Me Section within main
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  padding-top: 70px;
 }
 
 .about_me_row_container > * {
@@ -167,9 +210,13 @@ About Me Section within main
   justify-content: center;
 }
 
-.github-linkedin-links {
+.github-linkedin-links-nav-bar, .github-linkedin-links {
   display: flex;
   justify-content: space-around;
+}
+
+.github-linkedin-links-nav-bar {
+  width: 100px;
 }
 
 .link-icon-container > * {
@@ -180,15 +227,11 @@ About Me Section within main
 contact_info section
 */
 
-#contact_info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-cards {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .contact_container_column {
@@ -225,7 +268,6 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
   width: 100%;
 }
 
@@ -236,14 +278,27 @@ textarea {
     flex-direction: column;
   }
 
+  header {
+    flex-direction: column;
+  }
+
+  .multi-language-name-header {
+    width: 100%;
+    align-items: center;
+  }
+
+ #korean-name {
+    display: block;
+  }
+
   #projects {
     grid-template-areas: 
-    "first"
-    "second"
-    "third"
-    "fourth"
-    "fifth";
-  grid-template-columns: 1fr;
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth";
+    grid-template-columns: 1fr;
   }
 
   .project-card-description {
@@ -254,9 +309,12 @@ textarea {
     flex: 1 1 0;
   }
 
+  .link-bar-icons {
+    flex-direction: column;
+  }
+
   .link-bar {
     flex-direction: column;
-    justify-content: center;
   }
 
   .link-bar > li {
