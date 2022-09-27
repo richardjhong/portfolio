@@ -14,9 +14,11 @@ In this project, I further cemented my knowledge of CSS and HTML. In particular,
 Viewport of screenwidth of at least 1201 pixels               
         
           
-<pre><code>First First   | Second Second                 
+<pre><code>First First   | Second Second
+---------------------------                 
 First First   | Third Third
-     Fourth Fourth | Fifth Fifth</code></pre>
+---------------------------
+Fourth Fourth | Fifth Fifth</code></pre>
 
 Viewport of screenwidth of less than 1201 pixels
 
