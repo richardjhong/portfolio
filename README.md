@@ -54,12 +54,16 @@ The following animation shows the web application's appearance and functionality
 Larger Viewport
 ![portfolio demo](./assets/images/Screenshots/larger_viewport.png)
 
+
+
 Smaller Viewport
 ![portfolio demo](./assets/images/Screenshots/smaller_viewport.png)
 
 
+[Livesite] (https://richardjhong.github.io/portfolio/)
 
 
-
+## Credits
+<br>
 Stock photo credit:
 Project container background photo: https://www.pexels.com/photo/abstract-backdrop-of-multicolored-tiled-floor-7794425/
