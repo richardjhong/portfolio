@@ -22,15 +22,15 @@ Fourth Fourth | Fifth Fifth</code></pre>
 
 Viewport of screenwidth of less than 1201 pixels
 
-<pre> First
-      ------
-      Second
-      ------
-      Third
-      ------
-      Fourth
-      ------
-      Fifth </pre>
+<pre><code>First
+------
+Second
+------
+Third
+------
+Fourth
+------
+Fifth</code></pre>
 
 
 
