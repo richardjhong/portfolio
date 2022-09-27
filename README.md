@@ -51,7 +51,10 @@ In this project, I further cemented my knowledge of CSS and HTML. In particular,
 # Screenshots
 The following animation shows the web application's appearance and functionality:
 
+Larger Viewport
 ![portfolio demo](./assets/images/Screenshots/larger_viewport.png)
+
+Smaller Viewport
 ![portfolio demo](./assets/images/Screenshots/smaller_viewport.png)
 
 
