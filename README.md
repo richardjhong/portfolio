@@ -15,24 +15,24 @@ Viewport of screenwidth of at least 1201 pixels
         
           
 <pre>First First   | Second Second    
-                   --------------
+                --------------
      First First   | Third Third
      ----------------------------
      Fourth Fourth | Fifth Fifth </pre>
 
-        Viewport of screenwidth of less than 1201 pixels
+Viewport of screenwidth of less than 1201 pixels
 
-          <pre>
-          First 
-          ------
-          Second
-          ------
-          Third
-          ------
-          Fourth
-          ------
-          Fifth
-          </pre>
+<pre> First
+      ------
+      Second
+      ------
+      Third
+      ------
+      Fourth
+      ------
+      Fifth </pre>
+
+
 
 
 
