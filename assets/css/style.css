@@ -98,7 +98,7 @@ main section
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
   grid-template-areas: 
-    "first first second second"
+    "first first second second" 
     "first first third third"
     "fourth fourth fifth fifth";
   margin: 10px 0;
@@ -167,12 +167,18 @@ Effectively makes project cards by default grayscale and resume color on hover
 }
 
 .project-card-description {
-  text-align: right;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   margin-top: 100px;
   margin-right: 100px;
   visibility: hidden;
   text-shadow: var(--white) 0px 0px 10px;
   font-size: 30px;
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  width: 30%;
+  text-align: center;
 }
 
 .project-container:hover .project-card-description {
