@@ -15,7 +15,6 @@ header, #about_me, #contact_info {
   font-family: 'Noto', 'Trebuchet MS', Arial, sans-serif;
   background-color: var(--card-background-color);
   color: var(--white);
-  /* margin: 10px 0; */
 }
 
 header, footer {
@@ -59,11 +58,6 @@ header .header-title {
   font-size: 48px;
   margin: 0 5px;
 }
-
-/* #korean-name {
-  display: flex;
-  justify-content: flex-end;
-} */
 
 .link-bar-icons {
   display: flex;
@@ -171,13 +165,12 @@ Effectively makes project cards by default grayscale and resume color on hover
   top: 10px;
   left: 10px;
   margin-top: 100px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   visibility: hidden;
   text-shadow: var(--white) 0px 0px 10px;
   font-size: 30px;
   background: rgba(255, 255, 255, 0.6);
   color: black;
-  width: 50%;
   text-align: center;
 }
 
