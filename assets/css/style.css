@@ -106,6 +106,9 @@ main section
 #projects #first-project-container {
   grid-area: first;
   cursor: pointer;
+  background: url('../images/first_project_screen_recording.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #projects #second-project-container {

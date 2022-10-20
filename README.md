@@ -60,7 +60,8 @@ Smaller Viewport
 ![portfolio demo](./assets/images/Screenshots/smaller_viewport.png)
 
 
-![Livesite] (https://richardjhong.github.io/portfolio/)
+## Livesite
+[Deployed on Github page](https://richardjhong.github.io/portfolio/)
 
 
 ## Credits
